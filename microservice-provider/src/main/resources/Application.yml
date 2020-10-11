@@ -1,12 +1,20 @@
 server:
   port: 8888
 spring:
+  #security:
+  # user:
+  #   name: admin
+  #  password: a
+  # roles:
+  #  - USER
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: Asd8711341
     url: jdbc:mysql://101.200.216.156:3306/testmis81?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
+  application:
+    name: microservice-provider1
 mybatis:
   configuration:
     map-underscore-to-camel-case: true    #将_转为驼峰命名
@@ -15,3 +23,7 @@ mapper:
 logging:
   level:
     com.yc.springcloud812: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
