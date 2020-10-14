@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservice-eureka</artifactId>
-    <name>microservice-eureka</name>
+    <artifactId>microservice-eureka2</artifactId>
+    <name>microservice-eureka2</name>
 
 
     <dependencies>
