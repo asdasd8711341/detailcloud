@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8890
 spring:
   #security:
   # user:
@@ -23,7 +23,6 @@ mapper:
 logging:
   level:
     com.yc.springcloud1_2: debug
-    org.springframework.security: debug
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
@@ -31,7 +30,7 @@ eureka:
       #defaultZone: http://admin:a@localhost:7001/eureka  #授信用户登录
       defaultZone: http://admin:a@eureka1:7001/eureka,http://admin:a@eureka2:7002/eureka,http://admin:a@eureka3:7003/eureka
   instance:
-    instance-id: microservice-provider-product_1   #实例名
+    instance-id: microservice-provider-product_3   #实例名
     lease-expiration-duration-in-seconds: 90  #如果现在超过了5s的时间间隔( default: 90 s )
     lease-renewal-interval-in-seconds: 30   #设置心跳的时间间隔( default:30s )
 #监控配置

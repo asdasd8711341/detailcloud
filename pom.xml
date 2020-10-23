@@ -21,6 +21,8 @@
     <modules>
         <module>microservice-api</module>
         <module>microservice-provider</module>
+        <module>microservice-provider2</module>
+        <module>microservice-provider3</module>
         <module>microservice-consumer</module>
         <module>microservice-consumer2</module>
         <module>microservice-security</module>
