@@ -5,11 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/detailcloud.iml" filepath="$PROJECT_DIR$/detailcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-api/microservice-api.iml" filepath="$PROJECT_DIR$/microservice-api/microservice-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-consumer/microservice-consumer.iml" filepath="$PROJECT_DIR$/microservice-consumer/microservice-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-feign/microservice-consumer-feign.iml" filepath="$PROJECT_DIR$/microservice-consumer-feign/microservice-consumer-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-consumer2/microservice-consumer2.iml" filepath="$PROJECT_DIR$/microservice-consumer2/microservice-consumer2.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-eureka/microservice-eureka.iml" filepath="$PROJECT_DIR$/microservice-eureka/microservice-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-eureka2/microservice-eureka2.iml" filepath="$PROJECT_DIR$/microservice-eureka2/microservice-eureka2.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-eureka3/microservice-eureka3.iml" filepath="$PROJECT_DIR$/microservice-eureka3/microservice-eureka3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-interface/microservice-interface.iml" filepath="$PROJECT_DIR$/microservice-interface/microservice-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-provider/microservice-provider.iml" filepath="$PROJECT_DIR$/microservice-provider/microservice-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-provider2/microservice-provider2.iml" filepath="$PROJECT_DIR$/microservice-provider2/microservice-provider2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-provider3/microservice-provider3.iml" filepath="$PROJECT_DIR$/microservice-provider3/microservice-provider3.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-security/microservice-security.iml" filepath="$PROJECT_DIR$/microservice-security/microservice-security.iml" />
     </modules>
   </component>

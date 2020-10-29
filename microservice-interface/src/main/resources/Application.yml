@@ -1,0 +1,7 @@
+logging:
+  level:
+    com:
+      gsn:
+        springcloud1_2:
+          service:
+            IProductClientService: DEBUG

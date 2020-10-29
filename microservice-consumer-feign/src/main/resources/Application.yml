@@ -1,0 +1,25 @@
+server:
+  port: 9999
+
+
+#保证consumer能够服务发现了
+eureka:
+  client:
+    register-with-eureka: false    #消费端不须要到eureka中注册
+    service-url:
+      defaultZone: http://admin:a@eureka1:7001/eureka,http://admin:a@eureka2:7002/eureka,http://admin:a@eureka3:7003/eureka
+
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: # 可以被压缩的类型
+        - text/xml
+        - application/xml
+        - application/json
+      min-request-size: 2048 # 超过2048的字节进行压缩
+
+
+logging:
+  level:
+    com.gsn.springcloud1_2: debug

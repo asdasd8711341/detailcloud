@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-consumer2" />
+        <module name="microservice-consumer-feign" />
         <module name="microservice-security" />
         <module name="microservice-eureka3" />
         <module name="microservice-eureka2" />
+        <module name="microservice-interface" />
+        <module name="microservice-provider3" />
+        <module name="microservice-provider2" />
         <module name="microservice-provider" />
         <module name="microservice-consumer" />
         <module name="microservice-eureka" />
@@ -20,11 +24,15 @@
       <module name="detailcloud" target="1.8" />
       <module name="microservice-api" target="1.8" />
       <module name="microservice-consumer" target="1.8" />
+      <module name="microservice-consumer-feign" target="1.8" />
       <module name="microservice-consumer2" target="1.8" />
       <module name="microservice-eureka" target="1.8" />
       <module name="microservice-eureka2" target="1.8" />
       <module name="microservice-eureka3" target="1.8" />
+      <module name="microservice-interface" target="1.8" />
       <module name="microservice-provider" target="1.8" />
+      <module name="microservice-provider2" target="1.8" />
+      <module name="microservice-provider3" target="1.8" />
       <module name="microservice-security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
