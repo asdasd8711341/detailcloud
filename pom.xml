@@ -31,6 +31,10 @@
         <module>microservice-eureka3</module>
         <module>microservice-consumer-feign</module>
         <module>microservice-interface</module>
+        <module>microservice-provider-hystrix</module>
+        <module>microservice-hystrix-dashboard</module>
+        <module>microservice-provider-user-hystrix</module>
+        <module>microservice-turbine</module>
     </modules>
 
     <!-- 会实际下载jar包,子项目会继承这些依赖  -->

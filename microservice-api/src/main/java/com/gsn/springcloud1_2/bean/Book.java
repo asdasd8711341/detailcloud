@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Data      //  lombok 注解，节省getter, setter
+@Data
 @Table(name="book")   // JPA注解,将java类关联表
 public class Book {
     @Id  // JPA注解,指定此属性为表中的主键
@@ -17,4 +17,5 @@ public class Book {
     private BigDecimal bookPrice;
     private Date bookDate;
     private Integer userId;
+
 }

@@ -22,7 +22,7 @@ mapper:
   identity: MYSQL   # 标识列用mysql  配置主键自动增长
 logging:
   level:
-    com.yc.springcloud1_2: debug
+    com.gsn.springcloud1_2: debug
     org.springframework.security: debug
 eureka:
   client: # 客户端进行Eureka注册的配置
