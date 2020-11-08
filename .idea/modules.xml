@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-provider3/microservice-provider3.iml" filepath="$PROJECT_DIR$/microservice-provider3/microservice-provider3.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-security/microservice-security.iml" filepath="$PROJECT_DIR$/microservice-security/microservice-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-turbine/microservice-turbine.iml" filepath="$PROJECT_DIR$/microservice-turbine/microservice-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-zuul-gateway/microservice-zuul-gateway.iml" filepath="$PROJECT_DIR$/microservice-zuul-gateway/microservice-zuul-gateway.iml" />
     </modules>
   </component>
 </project>

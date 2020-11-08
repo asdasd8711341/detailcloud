@@ -12,6 +12,7 @@
         <module name="microservice-eureka" />
         <module name="microservice-eureka3" />
         <module name="microservice-eureka2" />
+        <module name="microservice-zuul-gateway" />
         <module name="microservice-provider3" />
         <module name="microservice-provider2" />
         <module name="microservice-interface" />
@@ -42,6 +43,7 @@
       <module name="microservice-provider3" target="1.8" />
       <module name="microservice-security" target="1.8" />
       <module name="microservice-turbine" target="1.8" />
+      <module name="microservice-zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
