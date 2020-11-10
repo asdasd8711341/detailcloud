@@ -5,11 +5,30 @@ eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
       defaultZone: http://admin:a@eureka1:7001/eureka,http://admin:a@eureka2:7002/eureka,http://admin:a@eureka3:7003/eureka
-    register-with-eureka: false      #暂时不注册
+    register-with-eureka: true     #注册 到eureka中
+  instance:
+    instance-id: microservice-zuul-gateway
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 2    #设置心跳间隔时间
+    lease-expiration-duration-in-seconds: 5  # 租约超时时间间隔
+
+info:
+  app.name: microservice-zuul-gateway
+  company.name: gsn
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$
+
+
+
+
 
 spring:
   application:
     name:  microservice-zuul-gateway
+  security:
+    user:
+      name: admin
+      password: b
 
 
 #zuul:
@@ -49,3 +68,8 @@ zuul:
   ignored-services:
     "*"
   prefix: /yc-api    #公共前缀
+
+
+logging:
+  level:
+    com.gsn.springcloud1_2: debug

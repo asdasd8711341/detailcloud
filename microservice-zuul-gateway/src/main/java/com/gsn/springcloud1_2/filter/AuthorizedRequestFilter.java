@@ -14,12 +14,13 @@ import java.util.Base64;
 public class AuthorizedRequestFilter extends ZuulFilter {
     @Override
     public String filterType() {
-        return FilterConstants.PRE_TYPE;   //  "pre"
+        return FilterConstants.PRE_TYPE;   //相当于直接返回  "pre"
     }
 
     @Override
-    public int filterOrder() {
+    public int filterOrder() { //order值越小 ，过滤器约在前面执行
         return 0;
+
     }
 
     @Override

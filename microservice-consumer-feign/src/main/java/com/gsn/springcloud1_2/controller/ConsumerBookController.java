@@ -3,6 +3,9 @@ package com.gsn.springcloud1_2.controller;
 
 import com.gsn.springcloud1_2.bean.Book;
 import com.gsn.springcloud1_2.service.IProductClientService;
+import com.gsn.springcloud1_2.service.IZUUlClientService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -16,21 +19,27 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/consumer")
 public class ConsumerBookController {
     //private  final  static  String URL = "http://localhost:8888/book/"; //通过eureka中注册服务来访问
     //直接访问eureka中的服务名即可,这样 ribbon会拉取到服务实例列表，再利用负载均衡算法获取一个服务.
-    private final static String RESTURI="http://MICROSERVICE-PROVIDER/";
+//    private final static String RESTURI="http://MICROSERVICE-PROVIDER/";
     //                                   http://ip:port/
+    @Resource           //注入interface中方法
+    private IZUUlClientService izuulClientService;
+
+    private static Logger log= LoggerFactory.getLogger(ConsumerBookController.class);
 
     @Resource
     private IProductClientService iProductClientService;
 
-    @Resource
-    private LoadBalancerClient loadBalancerClient;  //应为ribbon是客户端的负载均衡，所以可以在客户端记录访问的日志
+//    @Resource
+//    private LoadBalancerClient loadBalancerClient;  //应为ribbon是客户端的负载均衡，所以可以在客户端记录访问的日志
 
 //    @Autowired
 //    private RestTemplate restTemplate;
@@ -80,6 +89,19 @@ public class ConsumerBookController {
     @GetMapping("/getAll")
     public Object list() {
         return this.iProductClientService.list();
+    }
+
+
+    @RequestMapping("/all/{id}")    //调用interface中接口方法
+    public Object getBookAndUser( @PathVariable("id") long id){
+        log.info("*******"+id);
+        Map<String,Object> result = new HashMap<>();
+        result.put("book",izuulClientService.getBook(id));
+        log.info("******"+izuulClientService.getBook(id));
+        result.put("user",izuulClientService.getUser(id+""));
+        result.put("user2",izuulClientService.getUser2(id+""));
+        result.put("productList",izuulClientService.getAll() );
+        return  result;
     }
 
 }
